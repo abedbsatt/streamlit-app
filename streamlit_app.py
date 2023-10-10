@@ -33,6 +33,11 @@ st.sidebar.header('Interactive Features')
 
 # Visualization 1: Histogram of IMDb Ratings
 st.subheader("Distribution of IMDb Ratings")
+st.write("""
+This histogram represents the distribution of IMDb ratings across movies in the dataset.
+The x-axis represents IMDb ratings, while the y-axis shows the frequency of movies for each rating.
+Use the 'Year of release' slider to observe how the distribution changes over selected years.
+""")
 
 # Interactive Feature 1: Filter based on year
 year_to_filter = st.sidebar.slider('Year of release', int(data['Year of Release'].min()), int(data['Year of Release'].max()), (int(data['Year of Release'].min()), int(data['Year of Release'].max())))
@@ -48,6 +53,11 @@ st.plotly_chart(fig1)
 
 # Visualization 2: Scatter plot of IMDb Rating vs Metascore
 st.subheader("IMDb Rating vs Metascore")
+st.write("""
+This histogram represents the distribution of IMDb ratings across movies in the dataset.
+The x-axis represents IMDb ratings, while the y-axis shows the frequency of movies for each rating.
+Use the 'Year of release' slider to observe how the distribution changes over selected years.
+""")
 
 # Interactive Feature 2: Select a range of IMDb ratings to visualize
 rating_range = st.sidebar.slider('IMDb Rating range', float(data['Movie Rating'].min()), float(data['Movie Rating'].max()), (float(data['Movie Rating'].min()), float(data['Movie Rating'].max())))
