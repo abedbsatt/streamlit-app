@@ -23,8 +23,8 @@ Explore the top 1000 movies according to IMDb.
 Use the side panel to interact with the visualizations below!
 
 **Note:**
-- The first slider 'Year of release' will alter the first visualization (Distribution of IMDb Ratings).
-- The second slider 'IMDb Rating range' will affect the second visualization (IMDb Rating vs Metascore).
+- The first slider 'Year of release' will make changes to the first visualization (Distribution of IMDb Ratings).
+- The second slider 'IMDb Rating range' will make changes to the second visualization (IMDb Rating vs Metascore).
 """)  
 
 # Sidebar
@@ -33,7 +33,7 @@ st.sidebar.header('Interactive Features')
 # Visualization 1: Histogram of IMDb Ratings
 st.subheader("Distribution of IMDb Ratings")
 st.write("""
-This histogram represents the distribution of IMDb ratings across movies in the dataset.
+This histogram shows the distribution of IMDb ratings across movies in the dataset.
 The x-axis represents IMDb ratings, while the y-axis shows the frequency of movies for each rating.
 Use the 'Year of release' slider to observe how the distribution changes over selected years.
 """)
@@ -53,9 +53,9 @@ st.plotly_chart(fig1)
 # Visualization 2: Scatter plot of IMDb Rating vs Metascore
 st.subheader("IMDb Rating vs Metascore")
 st.write("""
-The scatter plot below illustrates the relationship between IMDb ratings and Metascores across movies in the dataset.
+The scatter plot below shows the relationship between IMDb ratings and Metascores across movies in the dataset.
 The x-axis indicates the IMDb rating, while the y-axis denotes the Metascore.
-Utilize the 'IMDb Rating range' slider to explore patterns within specific rating ranges.
+Use the 'IMDb Rating range' slider to explore patterns within specific rating ranges.
 """)
 
 # Interactive Feature 2: Select a range of IMDb ratings to visualize
