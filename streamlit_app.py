@@ -10,9 +10,9 @@ imdb_movies = "Top_1000_IMDb_movies_New_version.csv"
 df = pd.read_csv(imdb_movies)
 
 # Data cleaning
-    data['Votes'] = data['Votes'].str.replace(',', '').astype(int)
-    data['Year of Release'] = pd.to_numeric(data['Year of Release'], errors='coerce')
-    return data
+data['Votes'] = data['Votes'].str.replace(',', '').astype(int)
+data['Year of Release'] = pd.to_numeric(data['Year of Release'], errors='coerce')
+return data
 
 df = load_data()
 pd.set_option('display.max_rows', None)
