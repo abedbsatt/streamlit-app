@@ -18,7 +18,6 @@ data = load_data()
 st.title("IMDb Top 1000 Movies Exploration")
 
 # Introduction
-st.title("IMDb Top 1000 Movies Exploration")
 st.write("""
 Explore the top 1000 movies according to IMDb. 
 Use the side panel to interact with the visualizations below!
@@ -54,9 +53,9 @@ st.plotly_chart(fig1)
 # Visualization 2: Scatter plot of IMDb Rating vs Metascore
 st.subheader("IMDb Rating vs Metascore")
 st.write("""
-This histogram represents the distribution of IMDb ratings across movies in the dataset.
-The x-axis represents IMDb ratings, while the y-axis shows the frequency of movies for each rating.
-Use the 'Year of release' slider to observe how the distribution changes over selected years.
+The scatter plot below illustrates the relationship between IMDb ratings and Metascores across movies in the dataset.
+The x-axis indicates the IMDb rating, while the y-axis denotes the Metascore.
+Utilize the 'IMDb Rating range' slider to explore patterns within specific rating ranges.
 """)
 
 # Interactive Feature 2: Select a range of IMDb ratings to visualize
