@@ -20,7 +20,8 @@ st.title("IMDb Top 1000 Movies Exploration")
 # Introduction
 st.write("""
 Explore the top 1000 movies according to IMDb. 
-Use the side panel to interact with the visualizations below!
+Use the side panel to interact with the visualizations below! 
+Please note that the first slider will be altering the first visual only AND the second slider will alter the second visual.
 """)
 
 # Sidebar
