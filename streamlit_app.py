@@ -36,6 +36,7 @@ st.write("""
 This histogram shows the distribution of IMDb ratings across movies in the dataset.
 The x-axis represents IMDb ratings, while the y-axis shows the frequency of movies for each rating.
 Use the 'Year of release' slider to observe how the distribution changes over selected years.
+The IMDb ratings among the top 1000 movies are left-skewed, meaning that most movie ratings range from 7.6 to 8.1.
 """)
 
 # Interactive Feature 1: Filter based on year
