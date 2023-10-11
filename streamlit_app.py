@@ -53,7 +53,7 @@ st.plotly_chart(fig1)
 
 # Visualization 2: Scatter plot of IMDb Rating vs Metascore
 st.subheader("IMDb Rating vs Metascore")
-st.write("""
+st.write(""
 The scatter plot below shows the relationship between IMDb ratings and Metascores across movies in the dataset.
 The x-axis indicates the IMDb rating, while the y-axis denotes the Metascore.
 Use the 'IMDb Rating range' slider to explore patterns within specific rating ranges.
